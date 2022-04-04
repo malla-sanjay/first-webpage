@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-width: 950px;
+}
+
+/*sidemenu styling starts here ---------------------------------------------------------------*/
+#sidebarmenu{
+    position: absolute;
+    right: 0px;
+    z-index: 4;
+    width: 250px;
+    height: 100%;
+    background-color: #5a6e79;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    display: none;
+    justify-content: center;
+}
+
+#sidebarmenu #close{
+    border: none;
+    width: 50px;
+    align-self: flex-start;
+    background-color: #5a6e79;
+}
+
+#close > img{
+    width: 50px;
+    object-fit: cover;
+}
+
+#sidebarmenu #close:hover{
+    border-right: 3px solid aliceblue;
+    transition: 0.6s;
+}
+
+#sidebarmenu > p{
+    font-size: large;
+    color: aliceblue;
+    padding-bottom: 15px;
+}
+
+#sidebarmenu #signup{
+    color: aliceblue;
+    background-color: #5a6e79;
+    border: 3px solid aliceblue;
+    width: 100%;
+    font-size: large;
+}
+
+#sidebarmenu > #signup:hover{
+    color: black;
+    background-color: aliceblue;
+    transition: 0.5s;
+    font-size: x-large;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* navigation bar styling starts here--------------------------------------------------------- */
+header .navbar{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar .logo h2{
+    color: #5a6e79;
+}
+
+.navbar nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar nav ul li a:hover{
+    color: #5a6e79;
+    font-size: 1.1em;
+    transition: 0.2s;
+}
+
+.navbar #search input{
+    font-size: large;
+    float: left;
+}
+
+.navbar .navbaricons{
+    justify-content: space-between;
+}
+
+.navbar .navbaricons img{ 
+    margin-left: 1rem;
+    width: 2.4em;
+    cursor: pointer;
+}
+
+.navbaricons > button{
+    border: none;
+    background-color: white;
+}
+
+.navbaricons > button:hover{
+    border-right: 3px solid #5a6e79;
+    transition: 0.4s;
+}
+
+
+/*part one styling starts here------------------------------------------------------*/
+.part1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display:grid;
+    margin-right: 10%;
+    grid-template-columns: repeat(5,1fr); 
+    align-items: center; 
+}
+
+.images>img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description, .images, .togglebutton, .outlinebox{
+    grid-row: 1 / 2;
+}
+
+.description{
+    grid-column: 1 / 3;
+    z-index: 2;
+    background-color: #5a6e79;
+    color: aliceblue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.images{
+    z-index: 1;
+    grid-column: 2 / -1;
+    margin-bottom: 0.8rem;
+    margin-right: 0.8rem;
+    margin-left: 1rem;
+}
+
+.outlinebox{
+    z-index: 0;
+    grid-column: 2 / 3;
+    height: 20%;
+    align-self: flex-end;
+    object-fit: cover;
+    border: 3px solid #5a6e79;
+    border-radius: 1px;
+}
+
+.togglebutton{
+    z-index: 2;
+    display: flex;
+    grid-column: 5 / 6;
+    object-fit: cover;
+    justify-content: center;
+    align-self: flex-end;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.togglebutton > button{
+    justify-self: stretch;
+    border: none;
+    background-color: #5a6e79;
+    min-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.togglebutton > button:hover{
+    background-color: #4a5a63;
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+
+.togglebutton > button > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*part 2 styling starts here-----------------------------------------------------------*/
+.part2{
+    margin-top: 8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.part2-top{
+    margin-right: 30%;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.part2-top > hr{
+    flex: 1;
+    height: 0.4rem;
+    background-color: #5a6e79;
+    margin: auto;
+
+}
+
+.part2-top > h1{
+    flex: 3;
+}
+
+.part2-bottom{
+    display: flex;
+    gap: 5%;
+}
+
+.part2-bottom .bestquality{
+    flex: 1;
+    display: flex;
+    gap: 10%;
+}
+
+.bestquality .icon1 > img{
+    width: 50px;
+    height: 50px;
+}
+
+.part2-bottom .freeshipping{
+    flex: 1;
+    display: flex;
+    gap: 10%;
+}
+
+.freeshipping .icon2 > img{
+    width: 50px;
+    height: 50px;
+}
+
+.part2 .warranty{
+    flex: 1;
+    display: flex;
+    gap: 10%;
+}
+
+.warranty .icon3 > img{
+    width: 50px;
+    height: 50px;
+    filter: opacity(0.4) #5a6e79;
+}
+
+/*part 3 styling starts here ---------------------------------------------------*/
+.part3{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 8rem;
+    display: flex;
+    gap: 10%;
+    align-items:stretch;
+}
+
+.part3-left{
+    flex: 1;
+}
+
+.part3-left > img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.part3-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.part3-right .mid{
+    display: flex;
+    gap: 10%;
+}
+
+.part3-right .mid .experience, .award, .sales{
+    font-size: larger;
+    color: #5a6e79;
+}
+
+.part3-right .bottom{
+    margin-right: 60%;
+    height: 3rem;
+}
+
+.part3-right .bottom > button{
+    border: 2px solid grey;
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    text-align: center;
+    text-decoration: grey;
+}
+
+.part3-right .bottom > button:hover{
+    font-size: larger;
+    border: 4px solid #5a6e79;
+    transition: 0.4s;
+}
+
+/*part 4 styling starts here ---------------------------------------------------------*/
+
+.part4{
+    margin-top: 8rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    gap: 10%;
+}
+
+.part4-right{
+    flex: 1;
+}
+
+.part4-right > img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.part4 .part4-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.part4-left > h1{
+    margin-bottom: 3rem;
+}
+
+.process1, .process2, .process3{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: minmax(4em, auto);
+    grid-row-gap: 10%;
+    grid-column-gap: 10%;
+    margin-bottom: 3rem;
+}
+
+.counter1, .counter2, .counter3{
+    background-color: #5a6e79;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.header1, .header2, .header3{
+    text-align: start;
+}
+
+.line1, .line2{
+    border-left: 2px solid #5a6e79;
+    height: 100%;
+    margin-left: 50%;
+}
+
+.process3 .line3{
+    border-left: 2px solid white;
+    height: 100%;
+    margin-left: 50%; 
+}
+
+.description1, .description2, .description3{
+    color: #5a6e79;
+}
+
+/*part5 styling starts here -----------------------------------------------------*/
+.part5{
+    margin-top: 8rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.part5-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.part5-top > h1{
+    align-self: flex-start;
+}
+
+.part5-top .arrowbuttons{
+    align-self:flex-end;
+}
+
+.part5-top .arrowbuttons > button{
+    border: none;
+    background: white;
+}
+
+.part5-top .arrowbuttons >button:hover{
+    border: 3px solid #5a6e79;
+    transition: 0.4s;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.part5-bottom{
+    margin-top: 5%;
+    display: flex;
+    gap: 10%;
+    margin-bottom: 5rem;
+    transition: 0.6s;
+}
+
+.part5-bottom .card{
+    color: white;
+    display: flex;
+    min-width: 45%;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: #5a6e79;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card .reviewer{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.reviewer .photo{
+    overflow: hidden;
+    flex: 1;
+}
+
+.reviewer .photo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.reviewer .about{
+    flex: 5;
+}
+
+/*part6 styling starts here ---------------------------------------------------------*/
+.part6 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.part6 .subscription{
+    display: flex;
+    flex-direction: column;
+    margin-right: 23%;
+    margin-left: 23%;
+    gap: 2rem;
+}
+
+.subscription > h1{
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.subscription > p{
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.searchbar{
+    z-index: 1;
+    background-color: white;
+    padding: 3%;
+    display: flex;
+}
+
+.searchbar .searchfield{
+    font-size: large;
+    flex: 2;
+    border: none;
+}
+
+.searchbar .subscribe{
+    color: aliceblue;
+    font-size: x-large;
+    flex: 1;
+    border: none;
+    background-color: #5a6e79;
+    padding: 1rem;
+}
+
+.searchbar .subscribe:hover{
+    padding: 1.3rem;
+    font-size: xx-large;
+    background-color: #5d7583;
+    transition: 0.4s;
+}
+
+footer{
+    margin-top: -1.5rem;
+    background-color: #5a6e79;
+    color:aliceblue;
+    padding-top: 5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3rem;
+    z-index: 0;
+    display: flex;
+    gap: 5%;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a{
+   text-decoration: none;
+   color: aliceblue;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+footer .luxterior{
+    flex: 2;
+    text-align: left;
+}
+
+footer .aboutus{
+    flex: 1;
+}
+
+footer .company{
+    flex: 1;
+}
+
+footer .support{
+    flex: 1;
+}
+
+footer .getintouch{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.getintouch .socialmedia{
+    display: flex;
+    padding-top: 1rem;
+    gap: 5%;
+}
+
+
+.getintouch .socialmedia > a{
+    flex: 1;
+    overflow: hidden;
+    background-color: #5a6e79;
+}
+
+.socialmedia > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
